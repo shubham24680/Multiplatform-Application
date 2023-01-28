@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/animationAlign.dart';
 import 'pages/aboutDialog.dart';
 import 'pages/absorbPointer.dart';
+import 'pages/animationBuilder.dart';
 import 'pages/themes.dart';
 import 'pages/expansionTileCard.dart';
 import 'pages/url.dart';
@@ -70,6 +71,7 @@ class Collections extends StatelessWidget {
           button(
               context, 9, Colors.redAccent, 'Physics Simulation in Animation'),
           button(context, 13, Colors.grey, 'Animation Align'),
+          button(context, 14, Colors.amber, 'Animation Builder'),
         ],
       );
     }));
@@ -106,8 +108,10 @@ class Collections extends StatelessWidget {
                 return const AboutDialogScreen();
               case 12:
                 return const AbsorbPointerScreen();
+              case 13:
+                return const AnimationAlign();
             }
-            return const AnimationAlign();
+            return const AnimeBuilder();
           }));
         },
         style: ElevatedButton.styleFrom(backgroundColor: color, elevation: 5.0),
