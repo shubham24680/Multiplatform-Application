@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'pages/animationAlign.dart';
+import 'pages/aboutDialog.dart';
+import 'pages/absorbPointer.dart';
 import 'pages/themes.dart';
 import 'pages/expansionTileCard.dart';
 import 'pages/url.dart';
@@ -39,6 +42,7 @@ class Collections extends StatelessWidget {
               button(context, 1, Colors.lightBlueAccent, 'Themes'),
               button(context, 2, Colors.pinkAccent, 'Expansion Tile Card'),
               button(context, 10, Colors.black54, "URL"),
+              button(context, 12, Colors.deepOrange, "Absorb Pointer"),
             ],
           );
         }));
@@ -51,6 +55,7 @@ class Collections extends StatelessWidget {
               button(context, 4, Colors.amberAccent,
                   'Circular & Linear Progress Indicator With Alert Dialog '),
               button(context, 5, Colors.teal, 'Lazy Loader'),
+              button(context, 11, Colors.blue, 'About Dialog')
             ],
           );
         }));
@@ -64,6 +69,7 @@ class Collections extends StatelessWidget {
           button(context, 8, Colors.cyanAccent, 'Radial Hero Animation'),
           button(
               context, 9, Colors.redAccent, 'Physics Simulation in Animation'),
+          button(context, 13, Colors.grey, 'Animation Align'),
         ],
       );
     }));
@@ -94,8 +100,14 @@ class Collections extends StatelessWidget {
                 return const Page8();
               case 9:
                 return const Page9();
+              case 10:
+                return const URL();
+              case 11:
+                return const AboutDialogScreen();
+              case 12:
+                return const AbsorbPointerScreen();
             }
-            return const URL();
+            return const AnimationAlign();
           }));
         },
         style: ElevatedButton.styleFrom(backgroundColor: color, elevation: 5.0),
