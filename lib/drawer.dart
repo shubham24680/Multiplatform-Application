@@ -68,7 +68,8 @@ Drawer buildDrawer() {
 Widget menuItem(newIcons, name) {
   return ElevatedButton(
     onPressed: () {},
-    style: ElevatedButton.styleFrom(primary: Colors.white, elevation: 0.0),
+    style:
+        ElevatedButton.styleFrom(backgroundColor: Colors.white, elevation: 0.0),
     child: Padding(
       padding: const EdgeInsets.symmetric(vertical: 15.0),
       child: Row(children: [

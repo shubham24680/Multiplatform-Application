@@ -11,7 +11,7 @@ class AnimationAlign extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildPageAppBar(name, color, context),
-      body: Body(),
+      body: const Body(),
     );
   }
 }

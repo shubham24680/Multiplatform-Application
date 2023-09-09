@@ -41,13 +41,13 @@ class _AnimeState extends State<Anime> with TickerProviderStateMixin {
     return Center(
       child: AnimatedBuilder(
         animation: _controller,
-        child: FlutterLogo(
-          size: 100,
-        ),
         builder: ((context, child) => Transform.rotate(
               angle: _controller.value * 2.0 * math.pi,
               child: child,
             )),
+        child: const FlutterLogo(
+          size: 100,
+        ),
       ),
     );
   }
