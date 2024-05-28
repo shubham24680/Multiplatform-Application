@@ -13,7 +13,7 @@ class Page1 extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
         fontFamily: 'DynaPuff',
-        backgroundColor: Colors.lightBlueAccent[100],
+        scaffoldBackgroundColor: Colors.lightBlueAccent[100],
       ),
       home: Scaffold(
         appBar: buildPageAppBar(name, color, context),
@@ -62,7 +62,7 @@ class BuildPage extends StatelessWidget {
           height: 30.0,
           width: double.maxFinite,
           decoration: BoxDecoration(
-            color: Theme.of(context).backgroundColor,
+            color: Theme.of(context).scaffoldBackgroundColor,
             borderRadius: BorderRadius.circular(10.0),
           ),
           child: Center(
@@ -82,7 +82,7 @@ class BuildPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           margin: const EdgeInsets.only(top: 10.0),
           decoration: BoxDecoration(
-              color: Theme.of(context).backgroundColor,
+              color: Theme.of(context).scaffoldBackgroundColor,
               borderRadius: BorderRadius.circular(10.0)),
           child: Center(
             child: Text(
@@ -102,13 +102,13 @@ class BuildPage extends StatelessWidget {
           width: double.maxFinite,
           margin: const EdgeInsets.only(top: 10.0),
           decoration: BoxDecoration(
-              color: Theme.of(context).backgroundColor,
+              color: Theme.of(context).scaffoldBackgroundColor,
               borderRadius: BorderRadius.circular(10.0)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Icon(
                     Icons.star_rounded,
                     color: Colors.white,
@@ -146,15 +146,15 @@ class BuildPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           margin: const EdgeInsets.only(top: 10.0),
           decoration: BoxDecoration(
-              color: Theme.of(context).backgroundColor,
+              color: Theme.of(context).scaffoldBackgroundColor,
               borderRadius: BorderRadius.circular(10.0)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               for (int i = 0; i < 3; i++)
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.home,
                       color: Colors.white,

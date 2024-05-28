@@ -122,7 +122,12 @@ class Collections extends StatelessWidget {
             return const MyHeatMap();
           }));
         },
-        style: ElevatedButton.styleFrom(backgroundColor: color, elevation: 5.0),
+        style: ElevatedButton.styleFrom(
+            backgroundColor: color,
+            elevation: 5.0,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            )),
         child: Text(
           title,
           textAlign: TextAlign.center,

@@ -50,6 +50,7 @@ AppBar buildAppBar() {
       style: TextStyle(
         fontFamily: 'Edu VIC WA NT Beginner',
         fontWeight: FontWeight.bold,
+        color: Colors.white70,
       ),
     ),
     actions: <Widget>[
@@ -78,6 +79,7 @@ AppBar buildAppBar() {
             'Pages',
             style: TextStyle(
               fontFamily: 'Edu VIC WA NT Beginner',
+              color: Colors.white,
             ),
           ),
         ),
@@ -90,6 +92,7 @@ AppBar buildAppBar() {
             'Loaders',
             style: TextStyle(
               fontFamily: 'Edu VIC WA NT Beginner',
+              color: Colors.white,
             ),
           ),
         ),
@@ -102,6 +105,7 @@ AppBar buildAppBar() {
             'Animation',
             style: TextStyle(
               fontFamily: 'Edu VIC WA NT Beginner',
+              color: Colors.white,
             ),
           ),
         )
@@ -135,7 +139,10 @@ AppBar buildPageAppBar(name, color, context) {
     centerTitle: true,
     title: Text(
       name,
-      style: const TextStyle(fontFamily: 'Edu VIC WA NT Beginner'),
+      style: const TextStyle(
+        fontFamily: 'Edu VIC WA NT Beginner',
+        color: Colors.white70,
+      ),
     ),
     actions: <Widget>[
       IconButton(
